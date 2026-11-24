@@ -56,7 +56,7 @@ python -m http.server 8099
 
 ## Before publishing / updating
 
-1. **Contact email** — replace `hello@vybelive.com` in every page (header/footer)
+1. **Contact email** — replace `hello@vybelivellc.com` in every page (header/footer)
    and in `main.js` (`CONTACT_EMAIL`).
 2. **Canonical / Open Graph URLs** — currently point at
    `https://vybelivellc.com/`. Update them if the site moves
