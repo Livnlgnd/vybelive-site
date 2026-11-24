@@ -74,7 +74,7 @@
   /* ---------- contact form -> email ---------- */
   const form = document.getElementById("contact-form");
   const hint = document.getElementById("form-hint");
-  const CONTACT_EMAIL = "hello@vybelivellc.com";
+  const CONTACT_EMAIL = "sales@vybelivellc.com";
 
   if (!form) return;
 

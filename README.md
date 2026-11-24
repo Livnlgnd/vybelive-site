@@ -56,8 +56,10 @@ python -m http.server 8099
 
 ## Before publishing / updating
 
-1. **Contact email** — replace `hello@vybelivellc.com` in every page (header/footer)
-   and in `main.js` (`CONTACT_EMAIL`).
+1. **Contact emails** - public addresses are `sales@vybelivellc.com` (project
+   inquiries), `contact@vybelivellc.com` (general), and `hello@vybelivellc.com`.
+   The contact form in `main.js` uses `sales@vybelivellc.com`. Cloudflare Email
+   Routing forwards all three (and a catch-all) to the owner inbox.
 2. **Canonical / Open Graph URLs** — currently point at
    `https://vybelivellc.com/`. Update them if the site moves
    to a custom domain, and add a `CNAME` file with that domain.

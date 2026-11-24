@@ -1289,6 +1289,38 @@ p { margin: 0; }
 .contact-email span span { font-size: 0.95rem; font-weight: 500; }
 .contact-note { margin-top: 18px; font-size: 0.82rem; color: var(--muted-2); }
 
+.email-directory {
+  display: grid;
+  max-width: 390px;
+  border: 1px solid var(--line-strong);
+  border-radius: 14px;
+  background: #fff;
+  overflow: hidden;
+}
+.email-directory a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 13px 18px;
+  border-bottom: 1px solid var(--line);
+  transition: background 0.2s;
+}
+.email-directory a:last-child { border-bottom: 0; }
+.email-directory a:hover { background: #f7f8fc; }
+.email-directory small {
+  display: block;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted-2);
+  margin-bottom: 2px;
+}
+.email-directory strong { display: block; font-size: 0.92rem; font-weight: 500; }
+.email-directory .arrow { color: var(--violet); flex: none; transition: transform 0.2s; }
+.email-directory a:hover .arrow { transform: translateX(3px); }
+
+
 .contact-form {
   padding: 34px;
   border-radius: 20px;
