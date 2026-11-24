@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex" />
+<title>Page not found — VYBELIVE</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="fonts/fonts.css" />
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh;
+    display: grid; place-items: center;
+    background: #06070c; color: #eef0f7;
+    font-family: "Inter", system-ui, sans-serif;
+    text-align: center; padding: 24px;
+    background-image: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(109, 93, 252, .18), transparent 70%);
+  }
+  .mark { width: 54px; height: 54px; margin: 0 auto 26px; }
+  h1 { font-family: "Space Grotesk", sans-serif; font-size: clamp(2.4rem, 8vw, 4rem); letter-spacing: -.04em; margin: 0 0 14px; }
+  p { color: #9ba1b4; margin: 0 auto 30px; max-width: 420px; line-height: 1.6; }
+  a {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 13px 24px; border-radius: 999px;
+    background: #eef0f7; color: #08090e;
+    font-weight: 600; font-size: .94rem; text-decoration: none;
+    transition: background .2s, transform .2s;
+  }
+  a:hover { background: #d4ff5f; transform: translateY(-2px); }
+</style>
+</head>
+<body>
+  <main>
+    <svg class="mark" viewBox="0 0 40 40" aria-hidden="true">
+      <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b7bff"/><stop offset="1" stop-color="#35e0e8"/></linearGradient></defs>
+      <rect x="1" y="1" width="38" height="38" rx="11" fill="url(#g)" opacity=".14"/>
+      <rect x="1" y="1" width="38" height="38" rx="11" fill="none" stroke="url(#g)" stroke-opacity=".55"/>
+      <path d="M11 13.5 20 27l9-13.5" fill="none" stroke="url(#g)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="20" cy="12.5" r="2.2" fill="#d4ff5f"/>
+    </svg>
+    <h1>Lost the trail.</h1>
+    <p>This page doesn't exist — but the software does. Head back to the studio.</p>
+    <a href="./">Back to VYBELIVE <span aria-hidden="true">→</span></a>
+  </main>
+</body>
+</html>
+

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="TruckTap icon">
+  <rect width="512" height="512" fill="#0b0f13"/>
+  <rect x="40" y="40" width="432" height="432" rx="112" fill="#f97316"/>
+  <path d="M105 205c0-11 9-20 20-20h178c11 0 20 9 20 20v134H105V205Z" fill="#111820"/>
+  <path d="M323 230h44c7 0 14 4 18 10l30 47c3 5 5 10 5 16v56H323V230Z" fill="#1f2933"/>
+  <path d="M345 245h21c4 0 7 2 9 5l24 38c2 3 3 6 3 9v10h-57v-62Z" fill="#fef3c7"/>
+  <path d="M106 305h310v34H106z" fill="#0b0f13" opacity=".35"/>
+  <path d="M133 257h138v62H133z" fill="#f97316"/>
+  <path d="M167 288l22 24 49-56" fill="none" stroke="#111820" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="171" cy="350" r="34" fill="#111820"/>
+  <circle cx="171" cy="350" r="13" fill="#f97316"/>
+  <circle cx="382" cy="350" r="34" fill="#111820"/>
+  <circle cx="382" cy="350" r="13" fill="#f97316"/>
+  <path d="M258 118h-64m64 0-18-18m18 18-18 18" fill="none" stroke="#fff7ed" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" opacity=".92"/>
+  <path d="M374 138c18 0 33 15 33 33s-15 33-33 33-33-15-33-33 15-33 33-33Z" fill="#111820"/>
+  <path d="m361 171 9 9 17-20" fill="none" stroke="#f97316" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
