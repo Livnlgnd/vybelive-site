@@ -5,11 +5,25 @@ KeyAudit Pro, TruckTap, and Sentry Access Control.
 
 Live: https://livnlgnd.github.io/vybelive-site/
 
+## Pages
+
+| File | Purpose |
+| --- | --- |
+| `index.html` | Landing page: positioning, product overview, contract work, contact |
+| `products.html` | Product index |
+| `keyaudit-pro.html` | KeyAudit Pro detail page |
+| `trucktap.html` | TruckTap detail page |
+| `sentry-access.html` | Sentry Access Control detail page |
+| `services.html` | Contract services and process (`services.html#process`) |
+| `about.html` | Studio story and values |
+| `contact.html` | Project brief form |
+| `404.html` | Branded not-found page |
+
 ## Structure
 
 ```text
-index.html          All page content
-styles.css          Design system + responsive layout
+*.html              Pages listed above
+styles.css          Design system, components, subpage layouts, responsive rules
 main.js             Nav, scroll reveals, contact form
 assets/             Logos, product screenshots, OG image, favicon
 fonts/              Self-hosted Inter + Space Grotesk (no external requests)
@@ -24,13 +38,14 @@ python -m http.server 8099
 
 ## Before publishing / updating
 
-1. **Contact email** — replace `hello@vybelive.com` in `index.html`
-   (contact section, footer, JSON-LD) and in `main.js` (`CONTACT_EMAIL`).
+1. **Contact email** — replace `hello@vybelive.com` in every page (header/footer)
+   and in `main.js` (`CONTACT_EMAIL`).
 2. **Canonical / Open Graph URLs** — currently point at
    `https://livnlgnd.github.io/vybelive-site/`. Update them if the site moves
    to a custom domain, and add a `CNAME` file with that domain.
-3. **Product links** — KeyAudit Pro, TruckTap, and Sentry Access all link to
-   their live product sites. Update in `index.html` if they change.
+3. **Product links** — each product page links to its live product site.
+   Update in the relevant HTML file if they change.
+4. **Sitemap** — `sitemap.xml` lists every page. Keep it in sync when adding one.
 
 ## Deploy
 
@@ -46,6 +61,6 @@ Pages rebuilds automatically in about a minute.
 
 ## Editing design tokens
 
-Colors, fonts, spacing, and radii live at the top of `styles.css` in `:root`.
-The product visuals are plain screenshots in `assets/`; swap the files (keep
-the aspect ratios roughly 16:9) to refresh them.
+The site uses a light theme. Colors, fonts, spacing, and radii live at the top
+of `styles.css` in `:root`. Product visuals are screenshots in `assets/`; swap
+the files (keep roughly 16:9) to refresh them.

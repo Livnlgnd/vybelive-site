@@ -76,6 +76,8 @@
   const hint = document.getElementById("form-hint");
   const CONTACT_EMAIL = "hello@vybelive.com";
 
+  if (!form) return;
+
   form.addEventListener("submit", (event) => {
     event.preventDefault();
 

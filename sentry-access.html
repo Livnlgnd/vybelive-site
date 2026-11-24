@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sentry Access Control — Offline-first biometric access | VYBELIVE</title>
+<meta name="description" content="Sentry Access Control runs facial recognition, liveness checks, and encrypted identity matching entirely on-device. Offline-first biometric access for security integrators." />
+<meta name="theme-color" content="#f6f7fa" />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="canonical" href="https://livnlgnd.github.io/vybelive-site/sentry-access.html" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Sentry Access Control — Offline-first biometric access" />
+<meta property="og:description" content="Facial recognition and encrypted identity matching that run on the kiosk. No images uploaded, no cloud dependency." />
+<meta property="og:image" content="https://livnlgnd.github.io/vybelive-site/assets/og.png" />
+<link rel="preload" href="fonts/Inter.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="fonts/SpaceGrotesk.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="fonts/fonts.css" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="noise" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="VYBELIVE home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" role="presentation">
+          <defs><linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b7bff"/><stop offset="1" stop-color="#35e0e8"/></linearGradient></defs>
+          <rect x="1" y="1" width="38" height="38" rx="11" fill="url(#brandGrad)" opacity=".14"/>
+          <rect x="1" y="1" width="38" height="38" rx="11" fill="none" stroke="url(#brandGrad)" stroke-opacity=".55"/>
+          <path d="M11 13.5 20 27l9-13.5" fill="none" stroke="url(#brandGrad)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="20" cy="12.5" r="2.2" fill="#d4ff5f"/>
+        </svg>
+      </span>
+      <span class="brand-word">VYBE<span>LIVE</span></span>
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <a class="active" href="products.html">Products</a>
+      <a href="services.html">Services</a>
+      <a href="services.html#process">Process</a>
+      <a href="about.html">About</a>
+      <a class="nav-cta" href="contact.html">Start a project <span aria-hidden="true">↗</span></a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span class="sep">/</span><a href="products.html">Products</a><span class="sep">/</span><span aria-current="page">Sentry Access Control</span>
+      </nav>
+      <div class="page-hero-split">
+        <div>
+          <div class="product-title">
+            <img src="assets/sentry-logo.svg" alt="" width="64" height="64" />
+            <div>
+              <p class="product-tag">Offline-first biometric access</p>
+              <h1>Sentry Access Control</h1>
+            </div>
+          </div>
+          <p class="lede">
+            Access control that keeps working when the network doesn't. Sentry runs facial
+            recognition, liveness checks, and encrypted identity matching entirely on-device —
+            no camera images ever leave the kiosk. Built for sites that can't afford a cloud dependency.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://livnlgnd.github.io/sentry-access-site/" target="_blank" rel="noopener">Visit the Sentry site <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-ghost" href="contact.html">Talk about a deployment</a>
+          </div>
+          <div class="chips" style="margin-top:26px">
+            <span>Windows kiosk</span><span>iOS companion</span><span>On-device ML</span><span>Encrypted</span>
+          </div>
+        </div>
+        <div class="page-hero-visual">
+          <div class="sentry-panel">
+            <div class="sentry-panel-glow" aria-hidden="true"></div>
+            <img class="sentry-logo-lg" src="assets/sentry-logo.svg" alt="Sentry Access Control logo" width="96" height="96" loading="eager" />
+            <p class="sentry-status"><span class="live-dot" aria-hidden="true"></span> Access granted</p>
+            <div class="sentry-scan" aria-hidden="true">
+              <div class="scan-line"></div>
+              <svg class="face-wire" viewBox="0 0 100 100" fill="none" stroke="rgba(13,143,155,.7)" stroke-width="1.2">
+                <path d="M50 18c-12 0-20 9-20 21v10c0 5 1 8 3 12l4 8c1 3 4 5 7 5h12c3 0 6-2 7-5l4-8c2-4 3-7 3-12V39c0-12-8-21-20-21Z"/>
+                <path d="M38 43h6M56 43h6" stroke-linecap="round"/>
+                <path d="M50 44v12c0 1-1 2-2 2" stroke-linecap="round"/>
+                <path d="M42 66c2 2 5 3 8 3s6-1 8-3" stroke-linecap="round"/>
+                <circle cx="50" cy="50" r="46" stroke-dasharray="1 7" stroke-opacity=".35"/>
+              </svg>
+              <span class="scan-corner tl"></span><span class="scan-corner tr"></span>
+              <span class="scan-corner bl"></span><span class="scan-corner br"></span>
+            </div>
+            <dl class="sentry-meta">
+              <div><dt>Match</dt><dd>99.2%</dd></div>
+              <div><dt>Liveness</dt><dd>Pass</dd></div>
+              <div><dt>Latency</dt><dd>38 ms</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section" style="padding-top:48px;padding-bottom:48px">
+    <div class="container">
+      <dl class="spec-strip">
+        <div><dt>Kiosk</dt><dd>Windows desktop app</dd></div>
+        <div><dt>Companion</dt><dd>iPhone inventory &amp; audit</dd></div>
+        <div><dt>Sync</dt><dd>Optional PostgreSQL service</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="page-section" style="padding-top:24px">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">What it does</p>
+        <h2>Verified access, without the round trip.</h2>
+        <p class="section-sub">Recognition, liveness, matching, and audit all happen locally — in milliseconds, not uploads.</p>
+      </div>
+      <div class="detail-grid">
+        <article class="detail-card">
+          <span class="detail-num">01</span>
+          <h3>On-device recognition</h3>
+          <p>Face detection and identity matching run in the app. The kiosk keeps working with no internet connection.</p>
+        </article>
+        <article class="detail-card">
+          <span class="detail-num">02</span>
+          <h3>Liveness checks</h3>
+          <p>A photo held up to the camera shouldn't open a door. Liveness and quality checks gate every match.</p>
+        </article>
+        <article class="detail-card">
+          <span class="detail-num">03</span>
+          <h3>Encrypted templates</h3>
+          <p>Identities are stored as encrypted templates. Raw camera frames are never uploaded or retained as images.</p>
+        </article>
+        <article class="detail-card">
+          <span class="detail-num">04</span>
+          <h3>Fully standalone</h3>
+          <p>The kiosk is complete on its own. A site does not need a server, an account, or a live connection to operate.</p>
+        </article>
+        <article class="detail-card">
+          <span class="detail-num">05</span>
+          <h3>Optional central sync</h3>
+          <p>For multi-site operators, an optional control plane can distribute encrypted identities and collect audit events.</p>
+        </article>
+        <article class="detail-card">
+          <span class="detail-num">06</span>
+          <h3>iOS companion</h3>
+          <p>Sentry Companion pairs over local Wi-Fi to show the site audit stream and kiosk inventory from an iPhone.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section tint">
+    <div class="container">
+      <div class="split reverse">
+        <div class="split-copy">
+          <p class="kicker">Privacy by architecture</p>
+          <h2>No images. No cloud dependency.</h2>
+          <p>
+            Most biometric systems ask you to trust a vendor's cloud. Sentry removes that
+            conversation: the camera, the model, the template, and the audit trail stay on
+            hardware you control.
+          </p>
+          <ul class="check-list">
+            <li>Camera frames are processed locally and never uploaded</li>
+            <li>Identity templates are encrypted at rest</li>
+            <li>Access decisions continue through network outages</li>
+            <li>Audit events live on the kiosk and sync only if configured</li>
+            <li>Built for security integrators deploying on customer sites</li>
+          </ul>
+          <div class="link-row">
+            <a class="text-link" href="https://livnlgnd.github.io/sentry-access-site/" target="_blank" rel="noopener">Read the deployment details <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="split-visual">
+          <div class="sentry-panel">
+            <div class="sentry-panel-glow" aria-hidden="true"></div>
+            <img class="sentry-logo-lg" src="assets/sentry-logo.svg" alt="Sentry Access Control logo" width="96" height="96" loading="lazy" />
+            <p class="sentry-status"><span class="live-dot" aria-hidden="true"></span> Template encrypted</p>
+            <div class="sentry-scan" aria-hidden="true">
+              <div class="scan-line"></div>
+              <span class="scan-corner tl"></span><span class="scan-corner tr"></span>
+              <span class="scan-corner bl"></span><span class="scan-corner br"></span>
+            </div>
+            <dl class="sentry-meta">
+              <div><dt>Images stored</dt><dd>0</dd></div>
+              <div><dt>Cloud required</dt><dd>No</dd></div>
+              <div><dt>Templates</dt><dd>AES</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">How it works</p>
+        <h2>Enroll once. Verify locally. Keep the record.</h2>
+      </div>
+      <ol class="process-grid">
+        <li class="process-step"><span class="step-num">01</span><h3>Enroll</h3><p>Capture a consented identity sample and store only the encrypted template.</p></li>
+        <li class="process-step"><span class="step-num">02</span><h3>Verify</h3><p>The kiosk checks liveness, image quality, and a local match in milliseconds.</p></li>
+        <li class="process-step"><span class="step-num">03</span><h3>Decide</h3><p>Grant or deny on-device. The door does not wait on a server response.</p></li>
+        <li class="process-step"><span class="step-num">04</span><h3>Audit</h3><p>Events land in the local audit stream; central sync is optional, never required.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="page-section" style="padding-top:0">
+    <div class="container">
+      <div class="cta-band">
+        <div>
+          <h2>Deploy biometric access that stays local.</h2>
+          <p>See the product site for integrator details, or talk to us about a pilot.</p>
+        </div>
+        <a class="btn btn-primary" href="https://livnlgnd.github.io/sentry-access-site/" target="_blank" rel="noopener">Visit the Sentry site <span aria-hidden="true">↗</span></a>
+      </div>
+      <nav class="next-products" aria-label="More products">
+        <a class="next-product" href="trucktap.html"><small>Previous product</small><span aria-hidden="true">←</span><strong>TruckTap</strong></a>
+        <a class="next-product" href="keyaudit-pro.html"><small>Next product</small><strong>KeyAudit Pro</strong><span aria-hidden="true">→</span></a>
+      </nav>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a class="brand" href="index.html" aria-label="VYBELIVE home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" role="presentation">
+            <rect x="1" y="1" width="38" height="38" rx="11" fill="url(#brandGrad)" opacity=".14"/>
+            <rect x="1" y="1" width="38" height="38" rx="11" fill="none" stroke="url(#brandGrad)" stroke-opacity=".55"/>
+            <path d="M11 13.5 20 27l9-13.5" fill="none" stroke="url(#brandGrad)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="20" cy="12.5" r="2.2" fill="#d4ff5f"/>
+          </svg>
+        </span>
+        <span class="brand-word">VYBE<span>LIVE</span></span>
+      </a>
+      <p>A software studio building products that ship.<br />Vybelive LLC · United States</p>
+    </div>
+    <nav class="footer-col" aria-label="Products">
+      <h4>Products</h4>
+      <a href="keyaudit-pro.html">KeyAudit Pro</a>
+      <a href="trucktap.html">TruckTap</a>
+      <a href="sentry-access.html">Sentry Access Control</a>
+    </nav>
+    <nav class="footer-col" aria-label="Company">
+      <h4>Company</h4>
+      <a href="services.html">Contract work</a>
+      <a href="services.html#process">Process</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="footer-col">
+      <h4>Get in touch</h4>
+      <a href="mailto:hello@vybelive.com">hello@vybelive.com</a>
+      <a href="https://github.com/Livnlgnd" target="_blank" rel="noopener">GitHub ↗</a>
+      <span class="footer-status"><span class="status-dot" aria-hidden="true"></span> Open for contracts</span>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; <span id="year">2026</span> Vybelive LLC. All rights reserved.</p>
+    <p>Designed &amp; built by Vybelive.</p>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
+

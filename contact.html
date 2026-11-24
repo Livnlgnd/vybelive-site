@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Start a project — VYBELIVE</title>
+<meta name="description" content="Tell Vybelive about your app, website, or desktop software project. We'll reply with honest feedback and a clear next step, usually within one business day." />
+<meta name="theme-color" content="#f6f7fa" />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="canonical" href="https://livnlgnd.github.io/vybelive-site/contact.html" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Start a project — VYBELIVE" />
+<meta property="og:description" content="Tell us what you're building. We'll reply with honest feedback and a clear next step." />
+<meta property="og:image" content="https://livnlgnd.github.io/vybelive-site/assets/og.png" />
+<link rel="preload" href="fonts/Inter.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="fonts/SpaceGrotesk.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="fonts/fonts.css" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="noise" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="VYBELIVE home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" role="presentation">
+          <defs><linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b7bff"/><stop offset="1" stop-color="#35e0e8"/></linearGradient></defs>
+          <rect x="1" y="1" width="38" height="38" rx="11" fill="url(#brandGrad)" opacity=".14"/>
+          <rect x="1" y="1" width="38" height="38" rx="11" fill="none" stroke="url(#brandGrad)" stroke-opacity=".55"/>
+          <path d="M11 13.5 20 27l9-13.5" fill="none" stroke="url(#brandGrad)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="20" cy="12.5" r="2.2" fill="#d4ff5f"/>
+        </svg>
+      </span>
+      <span class="brand-word">VYBE<span>LIVE</span></span>
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <a href="products.html">Products</a>
+      <a href="services.html">Services</a>
+      <a href="services.html#process">Process</a>
+      <a href="about.html">About</a>
+      <a class="nav-cta" href="contact.html">Start a project <span aria-hidden="true">↗</span></a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span class="sep">/</span><span aria-current="page">Contact</span>
+      </nav>
+      <div class="contract-badge" style="margin-bottom:24px"><span class="pulse-ring" aria-hidden="true"></span> Open for contracts</div>
+      <h1>Have something<br />to build?</h1>
+      <p class="lede">
+        Tell us what you're trying to make, who it's for, and when it needs to exist.
+        We'll reply with honest feedback and a clear next step — usually within one business day.
+      </p>
+    </div>
+  </section>
+
+  <section class="page-contact">
+    <div class="container contact-inner">
+      <div class="contact-copy">
+        <p class="kicker">Start a project</p>
+        <h2>Send us the brief.</h2>
+        <p>
+          A few sentences is enough. If it's a fit, we'll follow up with questions and a
+          scoped plan. If it isn't, we'll tell you that too.
+        </p>
+        <a class="contact-email" href="mailto:hello@vybelive.com?subject=Project%20inquiry%20for%20Vybelive">
+          <span class="contact-email-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3.5 6.5 8.5 6 8.5-6"/></svg>
+          </span>
+          <span><small>Email us directly</small>hello@vybelive.com</span>
+        </a>
+        <p class="contact-note">Prefer async? Send a brief and we'll take it from there.</p>
+
+        <ul class="check-list" style="margin-top:36px">
+          <li>You'll hear back from a builder, not a bot</li>
+          <li>We'll flag risks or a better approach up front</li>
+          <li>No pressure and no automated drip campaign</li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="field-row">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="Jordan Lee" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="jordan@company.com" required />
+          </div>
+        </div>
+        <div class="field">
+          <label for="project">What are you building?</label>
+          <select id="project" name="project">
+            <option>Website or web app</option>
+            <option>Mobile app</option>
+            <option>Desktop app</option>
+            <option>Offline-first / sync system</option>
+            <option>AI or computer vision feature</option>
+            <option>Rescue an existing project</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Project details</label>
+          <textarea id="message" name="message" rows="5" placeholder="A sentence or two about the product, your timeline, and any constraints." required></textarea>
+        </div>
+        <div class="form-foot">
+          <button class="btn btn-primary" type="submit">Send project brief <span aria-hidden="true">→</span></button>
+          <p class="form-hint" id="form-hint" role="status">Opens your email app with the details filled in.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="page-section tint" style="padding-top:72px;padding-bottom:72px">
+    <div class="container">
+      <div class="detail-grid">
+        <article class="detail-card">
+          <span class="detail-num">01</span>
+          <h3>You send the brief</h3>
+          <p>A sentence about the product, the user, and the deadline is plenty to start.</p>
+        </article>
+        <article class="detail-card">
+          <span class="detail-num">02</span>
+          <h3>We reply with a plan</h3>
+          <p>Usually within one business day: questions, a recommendation, and a realistic scope.</p>
+        </article>
+        <article class="detail-card">
+          <span class="detail-num">03</span>
+          <h3>We build in the open</h3>
+          <p>Weekly builds, visible progress, and a product you can click before launch day.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a class="brand" href="index.html" aria-label="VYBELIVE home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" role="presentation">
+            <rect x="1" y="1" width="38" height="38" rx="11" fill="url(#brandGrad)" opacity=".14"/>
+            <rect x="1" y="1" width="38" height="38" rx="11" fill="none" stroke="url(#brandGrad)" stroke-opacity=".55"/>
+            <path d="M11 13.5 20 27l9-13.5" fill="none" stroke="url(#brandGrad)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="20" cy="12.5" r="2.2" fill="#d4ff5f"/>
+          </svg>
+        </span>
+        <span class="brand-word">VYBE<span>LIVE</span></span>
+      </a>
+      <p>A software studio building products that ship.<br />Vybelive LLC · United States</p>
+    </div>
+    <nav class="footer-col" aria-label="Products">
+      <h4>Products</h4>
+      <a href="keyaudit-pro.html">KeyAudit Pro</a>
+      <a href="trucktap.html">TruckTap</a>
+      <a href="sentry-access.html">Sentry Access Control</a>
+    </nav>
+    <nav class="footer-col" aria-label="Company">
+      <h4>Company</h4>
+      <a href="services.html">Contract work</a>
+      <a href="services.html#process">Process</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="footer-col">
+      <h4>Get in touch</h4>
+      <a href="mailto:hello@vybelive.com">hello@vybelive.com</a>
+      <a href="https://github.com/Livnlgnd" target="_blank" rel="noopener">GitHub ↗</a>
+      <span class="footer-status"><span class="status-dot" aria-hidden="true"></span> Open for contracts</span>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; <span id="year">2026</span> Vybelive LLC. All rights reserved.</p>
+    <p>Designed &amp; built by Vybelive.</p>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
