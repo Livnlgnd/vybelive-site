@@ -3,7 +3,7 @@
 Static marketing site for **Vybelive LLC**, the software studio behind
 KeyAudit Pro, TruckTap, and Sentry Access Control.
 
-Live: https://livnlgnd.github.io/vybelive-site/
+Live: https://vybelivellc.com/
 
 ## Pages
 
@@ -42,7 +42,7 @@ python -m http.server 8099
 1. **Contact email** — replace `hello@vybelive.com` in every page (header/footer)
    and in `main.js` (`CONTACT_EMAIL`).
 2. **Canonical / Open Graph URLs** — currently point at
-   `https://livnlgnd.github.io/vybelive-site/`. Update them if the site moves
+   `https://vybelivellc.com/`. Update them if the site moves
    to a custom domain, and add a `CNAME` file with that domain.
 3. **Product links** — each product page links to its live product site.
    Update in the relevant HTML file if they change.
