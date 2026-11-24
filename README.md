@@ -9,12 +9,13 @@ Live: https://livnlgnd.github.io/vybelive-site/
 
 | File | Purpose |
 | --- | --- |
-| `index.html` | Landing page: positioning, product overview, contract work, contact |
+| `index.html` | Landing page: positioning, explore links, featured products, CTA |
 | `products.html` | Product index |
 | `keyaudit-pro.html` | KeyAudit Pro detail page |
 | `trucktap.html` | TruckTap detail page |
 | `sentry-access.html` | Sentry Access Control detail page |
-| `services.html` | Contract services and process (`services.html#process`) |
+| `services.html` | Contract services |
+| `process.html` | How a build runs, week by week |
 | `about.html` | Studio story and values |
 | `contact.html` | Project brief form |
 | `404.html` | Branded not-found page |

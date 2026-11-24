@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Process — How Vybelive builds | VYBELIVE</title>
+<meta name="description" content="How a Vybelive build runs: a written scope, weekly working builds, direct feedback, and a clean handover of source and IP at launch." />
+<meta name="theme-color" content="#f6f7fa" />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="canonical" href="https://livnlgnd.github.io/vybelive-site/process.html" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Process — VYBELIVE" />
+<meta property="og:description" content="A written scope, weekly working builds, and a clean handover. No mystery, no black box." />
+<meta property="og:image" content="https://livnlgnd.github.io/vybelive-site/assets/og.png" />
+<link rel="preload" href="fonts/Inter.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="fonts/SpaceGrotesk.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="fonts/fonts.css" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="noise" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="VYBELIVE home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" role="presentation">
+          <defs><linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b7bff"/><stop offset="1" stop-color="#35e0e8"/></linearGradient></defs>
+          <rect x="1" y="1" width="38" height="38" rx="11" fill="url(#brandGrad)" opacity=".14"/>
+          <rect x="1" y="1" width="38" height="38" rx="11" fill="none" stroke="url(#brandGrad)" stroke-opacity=".55"/>
+          <path d="M11 13.5 20 27l9-13.5" fill="none" stroke="url(#brandGrad)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="20" cy="12.5" r="2.2" fill="#d4ff5f"/>
+        </svg>
+      </span>
+      <span class="brand-word">VYBE<span>LIVE</span></span>
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <a href="products.html">Products</a>
+      <a href="services.html">Services</a>
+      <a class="active" href="process.html">Process</a>
+      <a href="about.html">About</a>
+      <a class="nav-cta" href="contact.html">Start a project <span aria-hidden="true">↗</span></a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span class="sep">/</span><span aria-current="page">Process</span>
+      </nav>
+      <p class="kicker">How we work</p>
+      <h1>No mystery.<br />No black box.</h1>
+      <p class="lede">
+        A short, predictable path from first call to working software. You see progress
+        every week, give feedback on something real, and own everything at launch.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="contact.html">Start a project <span aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="services.html">See what we build</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section" style="padding-top:48px;padding-bottom:48px">
+    <div class="container">
+      <dl class="spec-strip">
+        <div><dt>Cadence</dt><dd>Weekly working builds</dd></div>
+        <div><dt>Scope</dt><dd>Written before work starts</dd></div>
+        <div><dt>Handover</dt><dd>Source &amp; IP are yours</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="page-section" style="padding-top:24px">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">The four steps</p>
+        <h2>From first call to launch.</h2>
+      </div>
+      <ol class="process-grid">
+        <li class="process-step"><span class="step-num">01</span><h3>Scope</h3><p>A short call and a written plan. We define the smallest version worth shipping, the risks, and a real timeline.</p></li>
+        <li class="process-step"><span class="step-num">02</span><h3>Design</h3><p>Interface direction and key flows before heavy code. You see and react to the product early, while changes are cheap.</p></li>
+        <li class="process-step"><span class="step-num">03</span><h3>Build</h3><p>Weekly builds you can actually use. Progress is demoed, not described. Feedback goes straight into the next increment.</p></li>
+        <li class="process-step"><span class="step-num">04</span><h3>Ship &amp; support</h3><p>Deployment, stores, installers, docs, and handover. Stay on for maintenance, or take the keys and run.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="page-section tint">
+    <div class="container">
+      <div class="engagement">
+        <div>
+          <p class="kicker">A week in a build</p>
+          <h3>Visible progress, every week.</h3>
+          <p>
+            You never wait six weeks for a reveal. Each week ends with something you can
+            open, click, and react to — with the next set of priorities already clear.
+          </p>
+          <div class="team-note">
+            <p>Short written updates, a shared build link, and a direct line to the person writing the code.</p>
+          </div>
+        </div>
+        <ul class="engagement-points">
+          <li><span>MON</span> Priorities confirmed for the week</li>
+          <li><span>WED</span> Midweek check-in if anything needs a decision</li>
+          <li><span>FRI</span> Working build + a short demo and notes</li>
+          <li><span>NEXT</span> Feedback folded into the following week</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">What you get</p>
+        <h2>No surprises at handover.</h2>
+      </div>
+      <div class="detail-grid">
+        <article class="detail-card">
+          <span class="detail-num">01</span>
+          <h3>A written scope</h3>
+          <p>Deliverables, assumptions, and a timeline in writing before work starts. Changes are agreed, not absorbed silently.</p>
+        </article>
+        <article class="detail-card">
+          <span class="detail-num">02</span>
+          <h3>A build you can use</h3>
+          <p>A shared environment throughout the project, not just screenshots. Test the real thing as it comes together.</p>
+        </article>
+        <article class="detail-card">
+          <span class="detail-num">03</span>
+          <h3>Source &amp; IP handover</h3>
+          <p>Repositories, infrastructure notes, and deployment docs are yours at launch. No lock-in to keep working with us.</p>
+        </article>
+      </div>
+      <div class="next-products">
+        <a class="next-product" href="services.html"><small>Previous</small><span aria-hidden="true">←</span><strong>Contract work</strong></a>
+        <a class="next-product" href="contact.html"><small>Next</small><strong>Start a project</strong><span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section" style="padding-top:0">
+    <div class="container">
+      <div class="cta-band">
+        <div>
+          <h2>Ready to scope it?</h2>
+          <p>Tell us what you're building. We'll reply with questions, a recommendation, and a realistic next step.</p>
+        </div>
+        <a class="btn btn-primary" href="contact.html">Start a project <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a class="brand" href="index.html" aria-label="VYBELIVE home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" role="presentation">
+            <rect x="1" y="1" width="38" height="38" rx="11" fill="url(#brandGrad)" opacity=".14"/>
+            <rect x="1" y="1" width="38" height="38" rx="11" fill="none" stroke="url(#brandGrad)" stroke-opacity=".55"/>
+            <path d="M11 13.5 20 27l9-13.5" fill="none" stroke="url(#brandGrad)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="20" cy="12.5" r="2.2" fill="#d4ff5f"/>
+          </svg>
+        </span>
+        <span class="brand-word">VYBE<span>LIVE</span></span>
+      </a>
+      <p>A software studio building products that ship.<br />Vybelive LLC · United States</p>
+    </div>
+    <nav class="footer-col" aria-label="Products">
+      <h4>Products</h4>
+      <a href="keyaudit-pro.html">KeyAudit Pro</a>
+      <a href="trucktap.html">TruckTap</a>
+      <a href="sentry-access.html">Sentry Access Control</a>
+    </nav>
+    <nav class="footer-col" aria-label="Company">
+      <h4>Company</h4>
+      <a href="services.html">Contract work</a>
+      <a href="process.html">Process</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="footer-col">
+      <h4>Get in touch</h4>
+      <a href="mailto:hello@vybelive.com">hello@vybelive.com</a>
+      <a href="https://github.com/Livnlgnd" target="_blank" rel="noopener">GitHub ↗</a>
+      <span class="footer-status"><span class="status-dot" aria-hidden="true"></span> Open for contracts</span>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; <span id="year">2026</span> Vybelive LLC. All rights reserved.</p>
+    <p>Designed &amp; built by Vybelive.</p>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
