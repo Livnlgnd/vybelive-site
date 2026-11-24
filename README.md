@@ -5,6 +5,23 @@ KeyAudit Pro, TruckTap, and Sentry Access Control.
 
 Live: https://vybelivellc.com/
 
+## Custom domain (Cloudflare)
+
+`CNAME` contains `vybelivellc.com`. Cloudflare DNS should keep these records:
+
+| Type | Name | Content | Proxy |
+| --- | --- | --- | --- |
+| A | `@` | `185.199.108.153` | DNS only |
+| A | `@` | `185.199.109.153` | DNS only |
+| A | `@` | `185.199.110.153` | DNS only |
+| A | `@` | `185.199.111.153` | DNS only |
+| CNAME | `www` | `livnlgnd.github.io` | DNS only |
+
+GitHub Pages issues the TLS certificate once DNS resolves. Leave the records
+DNS-only (grey cloud); proxying through Cloudflare can interfere with GitHub's
+certificate provisioning and redirects.
+
+
 ## Pages
 
 | File | Purpose |
