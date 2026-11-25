@@ -75,10 +75,11 @@
   const form = document.getElementById("contact-form");
   const hint = document.getElementById("form-hint");
   const CONTACT_EMAIL = "sales@vybelivellc.com";
+  const FORM_ENDPOINT = "https://vybelive-contact.joshua-c77.workers.dev";
 
   if (!form) return;
 
-  form.addEventListener("submit", (event) => {
+  form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
     if (!form.checkValidity()) {
@@ -86,27 +87,60 @@
       return;
     }
 
+    const button = form.querySelector('button[type="submit"]');
+    const originalButton = button ? button.innerHTML : "";
+    if (button) {
+      button.disabled = true;
+      button.textContent = "Sending…";
+    }
+    hint.textContent = "";
+    hint.classList.remove("ok", "err");
+
     const data = new FormData(form);
-    const name = String(data.get("name") || "").trim();
-    const email = String(data.get("email") || "").trim();
-    const project = String(data.get("project") || "Project inquiry").trim();
-    const message = String(data.get("message") || "").trim();
+    const payload = {
+      name: String(data.get("name") || "").trim(),
+      email: String(data.get("email") || "").trim(),
+      project: String(data.get("project") || "Project inquiry").trim(),
+      message: String(data.get("message") || "").trim(),
+      company: String(data.get("company") || "").trim(),
+    };
 
-    const subject = `New project: ${project} — ${name}`;
-    const body = [
-      `Name: ${name}`,
-      `Email: ${email}`,
-      `Project type: ${project}`,
-      "",
-      message,
-      "",
-      "— Sent from the VYBELIVE website",
-    ].join("\n");
+    try {
+      const response = await fetch(FORM_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
 
-    window.location.href =
-      `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      let result = {};
+      try {
+        result = await response.json();
+      } catch {
+        result = {};
+      }
 
-    hint.textContent = "Your email app should open now. If it doesn't, email us directly.";
-    hint.classList.add("ok");
+      if (!response.ok) {
+        throw new Error(result.error || "The message could not be sent.");
+      }
+
+      form.reset();
+      hint.textContent = "Thanks — your brief is on its way. We'll reply within one business day.";
+      hint.classList.add("ok");
+
+      if (button) {
+        button.textContent = "Sent ✓";
+        window.setTimeout(() => {
+          button.disabled = false;
+          button.innerHTML = originalButton;
+        }, 4000);
+      }
+    } catch (error) {
+      hint.textContent = `${error.message} You can also email ${CONTACT_EMAIL}.`;
+      hint.classList.add("err");
+      if (button) {
+        button.disabled = false;
+        button.innerHTML = originalButton;
+      }
+    }
   });
 })();

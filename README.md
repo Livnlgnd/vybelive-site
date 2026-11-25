@@ -58,14 +58,17 @@ python -m http.server 8099
 
 1. **Contact emails** - public addresses are `sales@vybelivellc.com` (project
    inquiries), `contact@vybelivellc.com` (general), and `hello@vybelivellc.com`.
-   The contact form in `main.js` uses `sales@vybelivellc.com`. Cloudflare Email
-   Routing forwards all three (and a catch-all) to the owner inbox.
-2. **Canonical / Open Graph URLs** — currently point at
+   Cloudflare Email Routing forwards all three (and a catch-all) to the owner
+   inbox.
+2. **Contact form** - `main.js` posts the brief directly to a Cloudflare Worker
+   (`FORM_ENDPOINT`) that delivers it through Resend. Update `FORM_ENDPOINT` if
+   the Worker is moved or renamed. The Worker source lives outside this repo.
+3. **Canonical / Open Graph URLs** — currently point at
    `https://vybelivellc.com/`. Update them if the site moves
    to a custom domain, and add a `CNAME` file with that domain.
-3. **Product links** — each product page links to its live product site.
+4. **Product links** — each product page links to its live product site.
    Update in the relevant HTML file if they change.
-4. **Sitemap** — `sitemap.xml` lists every page. Keep it in sync when adding one.
+5. **Sitemap** — `sitemap.xml` lists every page. Keep it in sync when adding one.
 
 ## Deploy
 
@@ -84,3 +87,4 @@ Pages rebuilds automatically in about a minute.
 The site uses a light theme. Colors, fonts, spacing, and radii live at the top
 of `styles.css` in `:root`. Product visuals are screenshots in `assets/`; swap
 the files (keep roughly 16:9) to refresh them.
+
