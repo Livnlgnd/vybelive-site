@@ -58,8 +58,8 @@ python -m http.server 8099
 
 1. **Contact emails** - public addresses are `sales@vybelivellc.com` (project
    inquiries), `contact@vybelivellc.com` (general), and `hello@vybelivellc.com`.
-   Cloudflare Email Routing forwards all three (and a catch-all) to the owner
-   inbox.
+   Cloudflare Email Routing delivers them to the private self-hosted mailbox
+   portal at `mail.vybelivellc.com`; outbound mail is sent through Resend.
 2. **Contact form** - `main.js` posts the brief directly to a Cloudflare Worker
    (`FORM_ENDPOINT`) that delivers it through Resend. Update `FORM_ENDPOINT` if
    the Worker is moved or renamed. The Worker source lives outside this repo.
